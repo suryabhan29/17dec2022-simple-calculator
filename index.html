@@ -5,12 +5,109 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>create a simple calculator with html forms</title>
+
+
+        <script>
+            // before the closing of head tag
+        </script>
     </head>
     <body>
-        <form>
-            <input type="text" name="number1">
-            <input type="text" name="operator">
-            <input type="text" name="number2">
+        <form style="display: inline-block;">
+            <input type="text" name="number1" size="5">
+            <select name="operator">
+                <option value="+">+</option> 
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" name="number2" size="5">
+            <input type="button" value="=" onclick="anil('Ok')">
         </form>
+        <span id="result" style="display:inline-block;"></span>
+        <script>
+            // before the closing of body tag
+            // before the closing of body tag is the best place to write js code
+
+            //1.Function defination
+
+            // global variabal
+            let n1 =  document.querySelector("input[name=\"number1\"]");  //object.method  // Es6 2015
+            let n2 =  document.querySelector("input[name=\"number2\"]");  //object.method  // Es6 2015
+
+            let rslt = document.getElementById('result');
+            let op = document.querySelector('select[name="operator"]');
+
+           // console.log( typeof n1.value);
+           // console.log( typeof n2.value);
+
+           
+
+            function anil(x,y,z){      // formal argument
+                // function body
+              //  console.log( typeof n1.value)
+              //  console.log( typeof n2.value)
+
+                // string--->number
+
+
+                // Explicit converstion from string to number
+                var x = parseFloat(n1.value);
+                var y = parseFloat(n2.value);
+
+              //  console.log(typeof x)
+             //   console.log(typeof y)
+
+              //  console.log(x + y)
+
+              //  console.log(rslt);
+
+                    /*
+                        switch(expression) {
+                        case x:
+                        // code block
+                        break;
+                        case y:
+                        // code block
+                        break;
+                        default:
+                        // code block
+                        }                  
+                    */
+                   console.log(op.value);
+                   switch(op.value){
+                    case '+':
+                        console.log(x + y);
+                        rslt.innerHTML = x + y;
+                        break;
+                    case '-':
+                        console.log(x - y);
+                        rslt.innerHTML = x - y;
+                        break;
+                    case '*':
+                        console.log(x * y);
+                        rslt.innerHTML = x * y;
+                        break;
+                    case '/':
+                        console.log(x / y);
+                        rslt.innerHTML = x / y;
+                        break
+                    default:
+                      //  console.log(op.value)
+                        console.log("Invaid operation")
+                   }
+
+              //  console.log(op.value);
+
+              //  rslt.innerHTML = x + y ;
+
+               // n1 = parseFloat(n1.value);
+               // n2 = parseFloat(n2.value);
+               // console.log( typeof n1);
+               // console.log( typeof n2);
+
+              //  console.log(n1 + n2)      // "10" ----> 10
+                // every function return something/result
+            }
+        </script>
     </body>
 </html>

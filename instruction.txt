@@ -1,0 +1,26 @@
+jo bhi opretor on se start hota hai usko event kehte hain
+
+function define ke samay jo bhi argument likhte he unhe formal argument kehte hain..
+
+\ = that is called Escape charater
+
+chahe promt box ho ya html form recive humesha string me hi hoti hai
+
+kisi ek data type ko dusre data type me convert krne ko kehte hai type converstion
+
+type converstion
+		the process of converting one data type to another data type is call type converstion
+
+there are two kind of type conversion
+
+1.Implicit conversion [autometicaly]
+2.Explicit conversion [devloper / forfully]
+
+string ----> number
+
+'5'-----> 5
+'10'------>10
+
+parseInt [or] parseFloat
+
+	DOM	-- Document object model / browser
